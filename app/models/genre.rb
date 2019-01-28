@@ -16,7 +16,6 @@ class Genre < ActiveRecord::Base
   def all_artist_names
     artists = []
     Artist.all.each do |artist|
-      binding.pry
     artist << artist.name
     end
     binding.pry
