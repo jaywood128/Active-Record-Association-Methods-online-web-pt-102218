@@ -1,3 +1,4 @@
+require 'pry'
 class Genre < ActiveRecord::Base
   has_many :songs
   has_many :artists, through: :songs
@@ -15,7 +16,7 @@ class Genre < ActiveRecord::Base
   def all_artist_names
     Song.all do |song|
     binding.pry
-  end
+    end
     # return an array of strings containing every musician's name
   end
 end
