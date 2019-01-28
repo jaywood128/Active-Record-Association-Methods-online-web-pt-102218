@@ -19,6 +19,7 @@ class Genre < ActiveRecord::Base
       binding.pry
     artist << artist.name
     end
+    binding.pry
     artist
     # return an array of strings containing every musician's name
   end
